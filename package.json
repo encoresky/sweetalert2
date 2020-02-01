@@ -30,7 +30,7 @@
     "gulp-css2js": "^1.1.2",
     "gulp-if": "^3.0.0",
     "gulp-rename": "^1.2.2",
-    "gulp-rollup": "^2.16.2",
+    "gulp-rollup": "^2.17.0",
     "gulp-uglify": "^3.0.0",
     "istanbul-lib-coverage": "^2.0.5",
     "jquery": "^3.3.1",
