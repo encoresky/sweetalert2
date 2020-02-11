@@ -550,7 +550,7 @@
     "@babel/helper-plugin-utils" "^7.8.3"
     babel-plugin-dynamic-import-node "^2.3.0"
 
-"@babel/plugin-transform-modules-commonjs@^7.4.4", "@babel/plugin-transform-modules-commonjs@^7.8.3":
+"@babel/plugin-transform-modules-commonjs@7.8.3", "@babel/plugin-transform-modules-commonjs@^7.4.4", "@babel/plugin-transform-modules-commonjs@^7.8.3":
   version "7.8.3"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-modules-commonjs/-/plugin-transform-modules-commonjs-7.8.3.tgz#df251706ec331bd058a34bdd72613915f82928a5"
   integrity sha512-JpdMEfA15HZ/1gNuB9XEDlZM1h/gF/YOH7zaZzQu2xCFRfwc01NXBMHHSTT6hRjlXJJs5x/bfODM3LiCk94Sxg==
@@ -899,19 +899,19 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@cypress/browserify-preprocessor@2.1.1":
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/@cypress/browserify-preprocessor/-/browserify-preprocessor-2.1.1.tgz#93e7c1228fee9dea9e80a1ccf0dd8cca1ffcbad8"
-  integrity sha512-S+0bzZbRsiFbrLkEygu5D0958z4ejio7hWxnO5MoSqD7SmZOmGRpjuZ9RaGcDmL6RWnklNjn8DkpP2s368qCKA==
+"@cypress/browserify-preprocessor@2.1.3":
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/@cypress/browserify-preprocessor/-/browserify-preprocessor-2.1.3.tgz#abbb8ba52ff33d70745c056e8fc675db2276a539"
+  integrity sha512-vZskc/EKejnmdm4fMGB1Fm39WelsF4HJHeI5q8I0LvGnrdvxSiCbn27TbhCM5Enq6Fkinf3f7oiHS/m2OUgzdA==
   dependencies:
     "@babel/core" "7.4.5"
     "@babel/plugin-proposal-class-properties" "7.3.0"
     "@babel/plugin-proposal-object-rest-spread" "7.3.2"
+    "@babel/plugin-transform-modules-commonjs" "7.8.3"
     "@babel/plugin-transform-runtime" "7.2.0"
     "@babel/preset-env" "7.4.5"
     "@babel/preset-react" "7.0.0"
     "@babel/runtime" "7.3.1"
-    babel-plugin-add-module-exports "1.0.0"
     babelify "10.0.0"
     bluebird "3.5.3"
     browserify "16.2.3"
@@ -922,14 +922,14 @@
     lodash.clonedeep "4.5.0"
     watchify "3.11.1"
 
-"@cypress/code-coverage@^1.10.4":
-  version "1.10.4"
-  resolved "https://registry.yarnpkg.com/@cypress/code-coverage/-/code-coverage-1.10.4.tgz#a166c865e175cda11a7702b4cd1aeabbfe98a676"
-  integrity sha512-wIvKn4HEJR2kCiSi0pY1u6IPGG04W7jCJKWVELeIojteHV5d0Jj9dFwwLofwmJr0DWtQsx6lFQfW8NA8z/CUow==
+"@cypress/code-coverage@^1.12.1":
+  version "1.12.1"
+  resolved "https://registry.yarnpkg.com/@cypress/code-coverage/-/code-coverage-1.12.1.tgz#fee49c44f6faf2c02427e55a4d2b87440d90e327"
+  integrity sha512-zgSDJ18kR/ALEUZgMaFTeXePL69+vZlxmBjNVFEXKPza7eJEgGmA2FTKKNzTCQJ/dLVLBfb1g9KYL9c+3uxDFg==
   dependencies:
-    "@cypress/browserify-preprocessor" "2.1.1"
+    "@cypress/browserify-preprocessor" "2.1.3"
     debug "4.1.1"
-    execa "3.4.0"
+    execa "4.0.0"
 
 "@cypress/listr-verbose-renderer@0.4.1":
   version "0.4.1"
@@ -1777,13 +1777,6 @@ babel-loader@^8.0.4:
     loader-utils "^1.0.2"
     mkdirp "^0.5.1"
     pify "^4.0.1"
-
-babel-plugin-add-module-exports@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-add-module-exports/-/babel-plugin-add-module-exports-1.0.0.tgz#72b5424d941a336c6a35357f373d8b8366263031"
-  integrity sha512-m0sMxPL4FaN2K69GQgaRJa4Ny15qKSdoknIcpN+gz+NaJlAW9pge/povs13tPYsKDboflrEQC+/3kfIsONBTaw==
-  optionalDependencies:
-    chokidar "^2.0.4"
 
 babel-plugin-array-includes@^2.0.3:
   version "2.0.3"
@@ -3879,10 +3872,10 @@ execa@3.3.0:
     signal-exit "^3.0.2"
     strip-final-newline "^2.0.0"
 
-execa@3.4.0:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/execa/-/execa-3.4.0.tgz#c08ed4550ef65d858fac269ffc8572446f37eb89"
-  integrity sha512-r9vdGQk4bmCuK1yKQu1KTwcT2zwfWdbdaXfCtAh+5nU/4fSX+JAb7vZGvI5naJrQlvONrEB20jeruESI69530g==
+execa@4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/execa/-/execa-4.0.0.tgz#7f37d6ec17f09e6b8fc53288611695b6d12b9daf"
+  integrity sha512-JbDUxwV3BoT5ZVXQrSVbAiaXhXUkIwvbhPIwZ0N13kX+5yCzOhUNdocxB/UQRuYOHRYYwAxKYwJYc0T4D12pDA==
   dependencies:
     cross-spawn "^7.0.0"
     get-stream "^5.0.0"
@@ -3891,7 +3884,6 @@ execa@3.4.0:
     merge-stream "^2.0.0"
     npm-run-path "^4.0.0"
     onetime "^5.1.0"
-    p-finally "^2.0.0"
     signal-exit "^3.0.2"
     strip-final-newline "^2.0.0"
 
